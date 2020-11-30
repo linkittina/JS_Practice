@@ -9,7 +9,7 @@
  * @returns {number} the number of 1 bits or 0 if any arguments are not proper
  */
 function numberOfBits(value) {
-    let bitNumber;
+    let bitNumber = 0;
     /*
      * Your task is to determine how many
      * 1 bits are there in the binary representation
@@ -22,7 +22,12 @@ function numberOfBits(value) {
      *   bitNumber = 5
      */
     // PLACE YOUR CODE BETWEEN THIS...
-
+    let binary = value.toString(2);
+    for (var i = 0; i < binary.length; i++) {
+        if (binary[i] === '1' ) {
+            bitNumber ++;
+        }
+    }
     // ...AND THIS COMMENT LINE!
     return bitNumber;
 }
