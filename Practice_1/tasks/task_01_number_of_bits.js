@@ -1,6 +1,6 @@
 'use strict';
 
-/*
+/**
 * The function determines and returns the
 * number of 1 digits in the binary representation
 * of the given number.
